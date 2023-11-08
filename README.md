@@ -12,7 +12,7 @@ This is an updated version of [vibration-plot-mode-in-vesta](https://github.com/
 
 ### **1.** Generate VESTA mode files from VASP calculation
 
-#### **a**.  Perform phonons calculation in vasp
+#### <u>a.  Perform phonons calculation in vasp</u>
 There are two methods to calculate phonons at Γ point in vasp. The first is [finite differences](https://www.vasp.at/wiki/index.php/Phonons_from_finite_differences).For [finite differences](https://www.vasp.at/wiki/index.php/Phonons_from_finite_differences) calculation, **IBRION** should be set 5 or 6, **NSW=1**, and **ISIF**, **POTIM**, **NFREE** should be set carefully.
 
 The second method is [density-functional-perturbation theory](https://www.vasp.at/wiki/index.php/Phonons_from_density-functional-perturbation_theory), For [density-functional-perturbation theory](https://www.vasp.at/wiki/index.php/Phonons_from_density-functional-perturbation_theory) calculation, **IBRION** should be set 7 or 8, **NSW=1**.
