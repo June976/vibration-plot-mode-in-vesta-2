@@ -28,7 +28,7 @@ python vasp_modes_to_vesta.py
 ```
 and you can get the result.
 
-The dependent libraries necessary for running of the python script is:
+The dependent libraries for running the python script are:
 - [numpy](https://numpy.org/)
 - [pandas](https://pandas.pydata.org/)
 - [pymatgen](https://pymatgen.org/)
@@ -64,7 +64,7 @@ python phonopy_modes_to_vesta.py
 ```
 and you can get the result.
 
-The dependent libraries necessary for running of the python script is:
+The dependent libraries for running the python script are:
 - [numpy](https://numpy.org/)
 - [pandas](https://pandas.pydata.org/)
 - [pymatgen](https://pymatgen.org/)
