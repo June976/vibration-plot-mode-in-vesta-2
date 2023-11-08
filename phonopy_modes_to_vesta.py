@@ -19,6 +19,7 @@ def load_Phonon_Calculation(supercell_matrix=[1, 1, 1],
                           unitcell_filename='./CONTCAR',
                           force_sets_filename='./FORCE_SETS'):
     phonon_run = phonopy.load(supercell_matrix=supercell_matrix, 
+                              primitive_matrix='auto',
                               unitcell_filename=unitcell_filename,
                               force_sets_filename=force_sets_filename)
     return phonon_run
