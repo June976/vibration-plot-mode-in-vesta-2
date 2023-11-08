@@ -54,7 +54,6 @@ def open_Vesta_file(dir_out_file, vesta_filename='primitive.vesta'):
         vesta  = open('{}/{}'.format(dir_out_file, vesta_filename),'r')
     except:
         print("Cannot find poscar.vesta in current directory")
-        print("Usage:\n\tpython modes_to_vesta.py <vesta-filename.vesta>")
         sys.exit(0)
     return vesta
 
