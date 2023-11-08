@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This is an updated version of [vibration-plot-mode-in-vesta](https://github.com/faradaymahe/vibration-plot-mode-in-vesta) code. The main function is the same as older version, which is to automatically convert the vibration modes at **Γ point** calculated by other software in Vesta format file to visualize it. The improvements include:
+This is an updated version of [vibration-plot-mode-in-vesta](https://github.com/faradaymahe/vibration-plot-mode-in-vesta) code. The main function is the same as older version, which is to automatically convert the vibration modes at **Γ point** calculated by other software to Vesta format file to visualize it. The improvements include:
 
 - Simplify operating procedures and make it more automated: No more manual generation of initial Vesta files.
 - More complete information: Beside the vibration modes in vesta file, other information such as vibration frequency, atoms cartesian coordinate etc is also exported to a csv file.
