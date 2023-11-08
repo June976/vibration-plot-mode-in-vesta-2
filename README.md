@@ -81,5 +81,6 @@ cmd_vesta_path = 'D:\VESTA-win64\VESTA-win64\VESTA.exe'     # The full path of V
 
 ### **1.**  How to read phonons calculation results from OUTCAR file
 
+![outcar](./figs/outcar.png)
 
 > [https://www.vasp.at/wiki/index.php/Phonons_from_finite_differences](https://www.vasp.at/wiki/index.php/Phonons_from_finite_differences)
