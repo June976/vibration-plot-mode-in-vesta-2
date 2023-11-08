@@ -144,7 +144,7 @@ Cartesian coordinates defined in the unit cell.</p></td>
 
 The form of eigenvector output by phonopy
 
-|  | Band #1 | Band #2 | ... | Band #N|
+|  | Band #1 | Band #2 | ... | Band #3N|
 | :---: | :---: | :---: | :---: | :---: | 
 | Atom #1 | Eig_X | Eig_X | ... | Eig_X |
 | Atom #1 | Eig_Y | Eig_Y | ... | Eig_Y |
