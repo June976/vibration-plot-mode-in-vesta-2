@@ -84,3 +84,72 @@ cmd_vesta_path = 'D:\VESTA-win64\VESTA-win64\VESTA.exe'     # The full path of V
 ![outcar](./figs/outcar.png)
 
 > [https://www.vasp.at/wiki/index.php/Phonons_from_finite_differences](https://www.vasp.at/wiki/index.php/Phonons_from_finite_differences)
+
+### **2.**  How to read eigvectors from phonopy calculation
+
+<section id="general">
+<h4>General<a class="headerlink" href="#general" title="Permalink to this heading">#</a></h4>
+<table class="table">
+<colgroup>
+<col style="width: 20.0%">
+<col style="width: 80.0%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Key</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>nqpoint</p></td>
+<td><p>Number of q-points calculated.</p></td>
+</tr>
+<tr class="row-odd"><td><p>natom</p></td>
+<td><p>Number of atoms in the primitive cell.</p></td>
+</tr>
+<tr class="row-even"><td><p>phonon</p></td>
+<td><p>Key name of list for q-points.</p></td>
+</tr>
+<tr class="row-odd"><td><p>q-position</p></td>
+<td><p>Position of q-vector in reduced coordinates.</p></td>
+</tr>
+<tr class="row-even"><td><p>band</p></td>
+<td><p>Key name of list for bands.</p></td>
+</tr>
+<tr class="row-odd"><td><p>frequency</p></td>
+<td><p>Phonon frequency in a specified unit at each phonon mode</p></td>
+</tr>
+<tr class="row-even"><td><p>eigenvector</p></td>
+<td><p>Eigenvector at each phonon mode.
+Each eigenvector :math:<code class="docutils literal notranslate"><span class="pre">\mathbf{e}</span></code> of
+<a class="reference internal" href="formulation.html#dynacmial-matrix-theory"><span class="std std-ref">dynamical matrix</span></a>
+is shown as sets of three
+complex values of each atom along the Cartesian axes in
+the primitive cell. The real and imaginary values
+correspond to the left and right, respectively.
+A set of eigenvectors comprising all bands at a q-point
+forms a unitary matrix obtained as the result of
+numpy.linalg.eigh, i.e., LAPACK of routine _heevd.
+Therefore eigenvectors correspond to the column vectors
+of the unitary matrix.</p></td>
+</tr>
+<tr class="row-odd"><td><p>group_velocity</p></td>
+<td><p>Group velocity at each phonon mode in the
+Cartesian coordinates defined in the unit cell.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+> [https://phonopy.github.io/phonopy/output-files.html#general](https://phonopy.github.io/phonopy/output-files.html#general)
+
+The form of eigenvector output by phonopy
+
+|  | Band #1 | Band #2 | ... | Band #N|
+| :---: | :---: | :---: | :---: | :---: | 
+| Atom #1 | Eig_X | Eig_X | ... | Eig_X |
+| Atom #1 | Eig_Y | Eig_Y | ... | Eig_Y |
+| Atom #1 | Eig_Z | Eig_Z | ... | Eig_Z |
+| ... | ... | ... | ... | ... |
+| Atom #N | Eig_X | Eig_X | ... | Eig_X |
+| Atom #N | Eig_Y | Eig_Y | ... | Eig_Y |
+| Atom #N | Eig_Z | Eig_Z | ... | Eig_Z |
