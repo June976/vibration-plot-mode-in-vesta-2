@@ -10,7 +10,7 @@ This is an updated version of [vibration-plot-mode-in-vesta](https://github.com/
 
 ## Usage
 
-### **1.** Converting results from vasp calculation
+### **1.** Generate VESTA mode files from VASP calculation
 
 #### **a**.  Perform phonons calculation in vasp
 There are two methods to calculate phonons at Γ point in vasp. The first is [finite differences](https://www.vasp.at/wiki/index.php/Phonons_from_finite_differences).For [finite differences](https://www.vasp.at/wiki/index.php/Phonons_from_finite_differences) calculation, **IBRION** should be set 5 or 6, **NSW=1**, and **ISIF**, **POTIM**, **NFREE** should be set carefully.
@@ -41,7 +41,7 @@ outcar_filename = './OUTCAR'                                # The full path of O
 cmd_vesta_path = 'D:\VESTA-win64\VESTA-win64\VESTA.exe'     # The full path of VESTA command
 ```
 
-### **2.** Converting results from phonopy calculation
+### **2.** Generate VESTA mode files from Phonopy calculation
 
 #### **a**.  Perform force sets calculation in phonopy
 
