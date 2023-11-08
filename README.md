@@ -89,7 +89,7 @@ cmd_vesta_path = 'D:\VESTA-win64\VESTA-win64\VESTA.exe'     # The full path of V
 
 > [https://www.vasp.at/wiki/index.php/Phonons_from_finite_differences](https://www.vasp.at/wiki/index.php/Phonons_from_finite_differences)
 
-### **2.**  How to read eigvectors from phonopy calculation
+### **2.**  How to read eigenvectors from phonopy calculation
 
 <section id="general">
 <h4>General<a class="headerlink" href="#general" title="Permalink to this heading">#</a></h4>
