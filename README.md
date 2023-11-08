@@ -12,7 +12,7 @@ This is an updated version of [vibration-plot-mode-in-vesta](https://github.com/
 
 ### **1.** Generate VESTA mode files from VASP calculation
 
-<u><big>a.  Perform phonons calculation in vasp</big></u>
+> a. Perform phonons calculation in vasp
 
 There are two methods to calculate phonons at Γ point in vasp. The first is [finite differences](https://www.vasp.at/wiki/index.php/Phonons_from_finite_differences).For [finite differences](https://www.vasp.at/wiki/index.php/Phonons_from_finite_differences) calculation, **IBRION** should be set 5 or 6, **NSW=1**, and **ISIF**, **POTIM**, **NFREE** should be set carefully.
 
@@ -20,7 +20,8 @@ The second method is [density-functional-perturbation theory](https://www.vasp.a
 
 After this step, you can get the **OUTCAR** from the calculation. Also, the input file **POSCAR** is alos needed for next step.
 
-#### **b**.  Run python script
+> b. Run python script
+
 With **POSCAR** file and **OUTCAR** file from previous step, now run command 
 ```bash
 python vasp_modes_to_vesta.py
@@ -42,9 +43,11 @@ outcar_filename = './OUTCAR'                                # The full path of O
 cmd_vesta_path = 'D:\VESTA-win64\VESTA-win64\VESTA.exe'     # The full path of VESTA command
 ```
 
+---
+
 ### **2.** Generate VESTA mode files from Phonopy calculation
 
-#### **a**.  Perform force sets calculation in phonopy
+> a. Perform force sets calculation in phonopy
 
 Since phonopy itself cannot perform DFT calculation, this step requires the use of DFT software. vasp, quantum-espresso, abinit, etc. are all ok. Here is the referencce:
 - vasp: [https://phonopy.github.io/phonopy/vasp.html#vasp-interface](https://phonopy.github.io/phonopy/vasp.html#vasp-interface)
@@ -54,7 +57,7 @@ Since phonopy itself cannot perform DFT calculation, this step requires the use 
 
 Before calculating force sets, the input parameters of **supercell_matrix** and initial unitcell are also needed for next step, together with the force sets file generated in this step.
 
-#### **b**.  Run python script
+> b. Run python script
 With **unitcell** file , **force sets** file and **supercell_matrix** from previous step, now run command 
 ```bash
 python phonopy_modes_to_vesta.py
