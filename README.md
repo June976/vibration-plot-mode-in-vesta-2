@@ -6,7 +6,7 @@ This is an updated version of [vibration-plot-mode-in-vesta](https://github.com/
 
 - Simplify operating procedures and make it more automated: No more manual generation of initial Vesta files.
 - More complete information: Beside the vibration modes in vesta file, other information such as vibration frequency, atoms cartesian coordinate etc is also exported to a csv file.
-- **Supports converting results from more calculation software: Not only the results of vasp calculation, the calculation results of phonopy is also supported.**
+- **Supports converting results from more calculation software: Not only the results of vasp calculation, the calculation results of phonopy are also supported.**
 
 ## Usage
 
