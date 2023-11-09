@@ -53,7 +53,7 @@ def open_Vesta_file(dir_out_file, vesta_filename='primitive.vesta'):
     try:
         vesta  = open('{}/{}'.format(dir_out_file, vesta_filename),'r')
     except:
-        print("Cannot find poscar.vesta in current directory")
+        print("Cannot find vesta file in current directory")
         sys.exit(0)
     return vesta
 
