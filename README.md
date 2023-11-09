@@ -158,3 +158,6 @@ The form of eigenvector output by phonopy
 | Atom #N | Eig_X | Eig_X | ... | Eig_X |
 | Atom #N | Eig_Y | Eig_Y | ... | Eig_Y |
 | Atom #N | Eig_Z | Eig_Z | ... | Eig_Z |
+
+
+## Refer to the example of Si for more details.
