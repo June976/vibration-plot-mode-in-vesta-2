@@ -160,4 +160,11 @@ The form of eigenvector output by phonopy
 | Atom #N | Eig_Z | Eig_Z | ... | Eig_Z |
 
 
-## Refers to the examples of [Si](https://github.com/June976/vibration-plot-mode-in-vesta-2/tree/main/Si) for more details.
+## References
+
+Refers to the examples of [Si](https://github.com/June976/vibration-plot-mode-in-vesta-2/tree/main/Si) for more details.
+
+Some related repositories in Github:
+- [vibration-plot-mode-in-vesta](https://github.com/faradaymahe/vibration-plot-mode-in-vesta)
+- [Phonopy_VESTA](https://github.com/AdityaRoy-1996/Phonopy_VESTA)
+- [VASP-plot-modes](https://github.com/Stanford-MCTG/VASP-plot-modes)
