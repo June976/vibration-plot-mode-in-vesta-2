@@ -58,6 +58,7 @@ Since phonopy itself cannot perform DFT calculation, this step requires the use 
 Before calculating force sets, the input parameters of **supercell_matrix** and initial unitcell are also needed for next step, together with the force sets file generated in this step.
 
 > b. Run python script
+
 With **unitcell** file , **force sets** file and **supercell_matrix** from previous step, now run command 
 ```bash
 python phonopy_modes_to_vesta.py
