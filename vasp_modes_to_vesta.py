@@ -97,7 +97,7 @@ def open_Vesta_Outcar_file(vesta_filename, dir_out_file, outcar_filename='OUTCAR
     try:
         vesta  = open('{}/{}'.format(dir_out_file, vesta_filename),'r')
     except:
-        print("Cannot find poscar.vesta in current directory")
+        print("Cannot find Vesta file in current directory")
         sys.exit(0)
     try:
         outcar = open(outcar_filename, 'r')
