@@ -18,7 +18,7 @@ There are two methods to calculate phonons at Γ point in vasp. The first is [fi
 
 The second method is [density-functional-perturbation theory](https://www.vasp.at/wiki/index.php/Phonons_from_density-functional-perturbation_theory), For [density-functional-perturbation theory](https://www.vasp.at/wiki/index.php/Phonons_from_density-functional-perturbation_theory) calculation, **IBRION** should be set 7 or 8, **NSW=1**.
 
-After this step, you can get the **OUTCAR** from the calculation. Also, the input file **POSCAR** is alos needed for next step.
+After this step, you can get the **OUTCAR** from the calculation. Also, the input file **POSCAR** is needed for next step.
 
 > b. Run python script
 
