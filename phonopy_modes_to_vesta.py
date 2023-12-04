@@ -135,7 +135,7 @@ if __name__ == '__main__':
     ############################################  initial parameters  ###################################################
     dir_out_file = 'out'                                        # The directory for saving result file  
     scaling_factor = 3                                          # The scale factor of the length of vector in VESTA file             
-    supercell_matrix = [4, 4, 1]                                # The supercell matrix used for force sets calculation
+    supercell_matrix = [1, 1, 1]                                # The supercell matrix used for force sets calculation
     unitcell_filename = './CONTCAR'                             # The unit cell used for force sets calculation
     force_sets_filename = './FORCE_SETS'                        # The force sets file path calculated by Phonopy
     cmd_vesta_path = 'D:\VESTA-win64\VESTA-win64\VESTA.exe'     # The full path of VESTA command
